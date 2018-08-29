@@ -55,6 +55,8 @@ table {
 html {
   font-size: 20px;
   background-color: #eee;
+  font-family: "Lato", sans-serif;
+  color: #444;
 }
 
 header, section, footer {
@@ -62,8 +64,22 @@ header, section, footer {
   padding-right: 20% !important;
 }
 
+a {
+  color: #59ABE3;
+  text-decoration: none;
+}
+a:hover {
+  color: #049372;
+}
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  color: #414952;
+}
+
 header {
-  background-color: #aaa;
+  background-color: white;
   padding-bottom: 170px;
   padding-top: 15px;
 }
@@ -76,6 +92,13 @@ header p {
 
 nav {
   margin-bottom: calc(170px - 1rem);
+  display: flex;
+}
+nav #home {
+  flex: 1;
+}
+nav .right-link {
+  margin-left: 15px;
 }
 
 section {

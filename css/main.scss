@@ -1,8 +1,13 @@
 @import 'reset';
 
+$link: #59ABE3;
+$accent: #049372;
+
 html {
     font-size: 20px;
     background-color: #eee;
+    font-family: 'Lato', sans-serif;
+    color: #444;
 }
 
 header, section, footer {
@@ -10,8 +15,23 @@ header, section, footer {
     padding-right: 20% !important;
 }
 
+a {
+    color: $link;
+    text-decoration: none;
+
+    &:hover {
+        color: $accent;
+    }
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    color: rgb(65, 73, 82);
+}
+
 header {
-    background-color: #aaa;
+    background-color: white;
     padding-bottom: 170px;
     padding-top: 15px;
 
@@ -25,6 +45,15 @@ header {
 
 nav {
     margin-bottom: calc(170px - 1rem); // Match with header padding-bottom
+    display: flex;
+
+    #home {
+        flex: 1;
+    }
+
+    .right-link {
+        margin-left: 15px;
+    }
 }
 
 section {
