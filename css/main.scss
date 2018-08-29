@@ -1,0 +1,45 @@
+@import 'reset';
+
+html {
+    font-size: 20px;
+    background-color: #eee;
+}
+
+header, section, footer {
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+}
+
+header {
+    background-color: #aaa;
+    padding-bottom: 170px;
+    padding-top: 15px;
+
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+nav {
+    margin-bottom: calc(170px - 1rem); // Match with header padding-bottom
+}
+
+section {
+    padding: 175px;
+    background-color: white;
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+#technical {
+    margin-bottom: 15px;
+}
+
+footer {
+    padding: 30px;
+}
