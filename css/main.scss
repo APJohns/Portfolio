@@ -1,11 +1,13 @@
 @import 'reset';
+@import 'patterns';
 
 $link: #59ABE3;
 $accent: #049372;
+$offWhite: rgb(197, 211, 216);
 
 html {
     font-size: 20px;
-    background-color: #eee;
+    background-color: #ebebeb;
     font-family: 'Lato', sans-serif;
     color: #444;
 }
@@ -31,15 +33,17 @@ h1 {
 }
 
 header {
-    background-color: white;
     padding-bottom: 170px;
     padding-top: 15px;
+    border-bottom: 7px solid $accent;
 
     h1 {
         font-size: 2rem;
+        color: $offWhite;
     }
     p {
         font-size: 1.4rem;
+        color: $offWhite;
     }
 }
 
@@ -57,29 +61,41 @@ nav {
 }
 
 ul {
-    img {
+    svg {
         vertical-align: sub;
         margin-right: 15px;
+        fill: $accent;
     }
-}
-
-li {
-    margin: 15px 0;
 }
 
 section {
     padding: 175px;
-    background-color: white;
+    display: flex;
+    border-bottom: 1px dashed #aaa;
 
     h1 {
         font-size: 1.5rem;
     }
 }
 
-#technical {
-    margin-bottom: 15px;
+.benefits {
+    flex: 2;
+
+    h1 { margin-bottom: 35px; }
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 35px;
+    }
+}
+
+.benefits-pic {
+    flex: 1;
 }
 
 footer {
+    background-color: #555;
+    color: $offWhite;
     padding: 30px;
 }
