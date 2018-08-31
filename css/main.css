@@ -101,13 +101,16 @@ ul svg {
 
 section {
   padding: 175px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 7%;
+  align-items: center;
   border-bottom: 1px dashed #aaa; }
   section h1 {
     font-size: 1.5rem; }
 
 .benefits {
-  flex: 2; }
+  grid-column: span 2; }
   .benefits h1 {
     margin-bottom: 35px; }
   .benefits ul {
@@ -115,8 +118,8 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-gap: 35px; }
 
-.benefits-pic {
-  flex: 1; }
+.benefits-pic img {
+  width: 100%; }
 
 footer {
   background-color: #555;

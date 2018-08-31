@@ -70,7 +70,10 @@ ul {
 
 section {
     padding: 175px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 7%;
+    align-items: center;
     border-bottom: 1px dashed #aaa;
 
     h1 {
@@ -79,8 +82,7 @@ section {
 }
 
 .benefits {
-    flex: 2;
-
+    grid-column: span 2;
     h1 { margin-bottom: 35px; }
 
     ul {
@@ -91,7 +93,9 @@ section {
 }
 
 .benefits-pic {
-    flex: 1;
+    img {
+        width: 100%;
+    }
 }
 
 footer {
