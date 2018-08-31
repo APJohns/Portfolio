@@ -68,7 +68,7 @@ a {
   color: #59ABE3;
   text-decoration: none; }
   a:hover {
-    color: #049372; }
+    color: #FFB61E; }
 
 h1 {
   font-family: 'Work Sans', sans-serif;
@@ -78,7 +78,7 @@ h1 {
 header {
   padding-bottom: 170px;
   padding-top: 15px;
-  border-bottom: 7px solid #049372; }
+  border-bottom: 7px solid #FFB61E; }
   header h1 {
     font-size: 2rem;
     color: #c5d3d8; }
@@ -89,15 +89,24 @@ header {
 nav {
   margin-bottom: calc(170px - 1rem);
   display: flex; }
-  nav #home {
-    flex: 1; }
-  nav .right-link {
-    margin-left: 15px; }
+
+#home {
+  flex: 1;
+  font-weight: bold; }
+
+#portfolio-link {
+  color: #BF55EC; }
+
+#contact-link {
+  color: #FFB61E; }
+
+.right-link {
+  margin-left: 15px; }
 
 ul svg {
   vertical-align: sub;
   margin-right: 15px;
-  fill: #049372; }
+  fill: #FFB61E; }
 
 section {
   padding: 175px;

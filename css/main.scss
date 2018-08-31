@@ -2,7 +2,8 @@
 @import 'patterns';
 
 $link: #59ABE3;
-$accent: #049372;
+$orange: #FFB61E;
+$purple: #BF55EC;
 $offWhite: rgb(197, 211, 216);
 
 html {
@@ -22,7 +23,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $accent;
+        color: $orange;
     }
 }
 
@@ -35,7 +36,7 @@ h1 {
 header {
     padding-bottom: 170px;
     padding-top: 15px;
-    border-bottom: 7px solid $accent;
+    border-bottom: 7px solid $orange;
 
     h1 {
         font-size: 2rem;
@@ -50,21 +51,30 @@ header {
 nav {
     margin-bottom: calc(170px - 1rem); // Match with header padding-bottom
     display: flex;
+}
 
-    #home {
-        flex: 1;
-    }
+#home {
+    flex: 1;
+    font-weight: bold;
+}
 
-    .right-link {
-        margin-left: 15px;
-    }
+#portfolio-link {
+    color: $purple;
+}
+
+#contact-link {
+    color: $orange;
+}
+
+.right-link {
+    margin-left: 15px;
 }
 
 ul {
     svg {
         vertical-align: sub;
         margin-right: 15px;
-        fill: $accent;
+        fill: $orange;
     }
 }
 
