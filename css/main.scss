@@ -1,11 +1,7 @@
 @import 'reset';
+@import 'variables';
 @import 'patterns';
-
-$link: #59ABE3;
-$orange: #FFB61E;
-$purple: #BF55EC;
-$offWhite: #ebebeb;
-$dark: #3d4b55;
+@import 'portfolio';
 
 html {
     font-size: 20px;
@@ -14,7 +10,7 @@ html {
     color: #444;
 }
 
-header, section, footer {
+header, section, footer, article {
     padding-left: 20% !important;
     padding-right: 20% !important;
 

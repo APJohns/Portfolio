@@ -53,17 +53,48 @@ header {
   background-color: #59abe3;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23082d4c' fill-opacity='0.48' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); }
 
+article {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5%;
+  align-items: center; }
+  article h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd; }
+  article p {
+    line-height: 1.5rem; }
+  article img {
+    width: 100%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); }
+  article .button {
+    background-color: #59ABE3; }
+    article .button:hover {
+      background-color: #3d4b55; }
+
+.tech-group {
+  display: flex;
+  margin: 15px 0; }
+
+.tech {
+  margin-right: 15px;
+  background-color: #BF55EC;
+  color: #ebebeb;
+  padding: 5px 10px;
+  border-left: 4px solid #FFB61E; }
+
 html {
   font-size: 20px;
   background-color: #ebebeb;
   font-family: 'Lato', sans-serif;
   color: #444; }
 
-header, section, footer {
+header, section, footer, article {
   padding-left: 20% !important;
   padding-right: 20% !important; }
   @media screen and (max-width: 1000px) {
-    header, section, footer {
+    header, section, footer, article {
       padding-left: 10% !important;
       padding-right: 10% !important; } }
 

@@ -1,0 +1,43 @@
+article {
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 5%;
+	align-items: center;
+
+	h1 {
+		font-size: 1.5rem;
+		margin-bottom: 15px;
+		border-bottom: 2px solid #ddd;
+	}
+
+	p {
+		line-height: 1.5rem;
+	}
+
+	img {
+		width: 100%;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+	}
+
+	.button {
+		background-color: $link;
+
+		&:hover {
+			background-color: $dark;
+		}
+	}
+}
+
+.tech-group {
+	display: flex;
+	margin: 15px 0;
+}
+
+.tech {
+	margin-right: 15px;
+	background-color: $purple;
+	color: $offWhite;
+	padding: 5px 10px;
+	border-left: 4px solid $orange;
+}
