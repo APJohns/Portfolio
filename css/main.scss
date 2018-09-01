@@ -141,6 +141,11 @@ section {
 .benefits {
     grid-column: span 2;
 
+    h1 {
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #ddd;
+    }
+
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr;

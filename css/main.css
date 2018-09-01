@@ -154,6 +154,9 @@ section {
 
 .benefits {
   grid-column: span 2; }
+  .benefits h1 {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ddd; }
   .benefits ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
