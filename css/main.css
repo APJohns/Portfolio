@@ -66,14 +66,17 @@ header, section, footer {
 
 a {
   color: #59ABE3;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.1s all; }
   a:hover {
-    color: #FFB61E; }
+    color: #FFB61E;
+    transition: 0.1s all; }
 
 h1 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 800;
-  color: #414952; }
+  color: #414952;
+  margin-bottom: 35px; }
 
 header {
   padding-bottom: 170px;
@@ -81,10 +84,11 @@ header {
   border-bottom: 7px solid #FFB61E; }
   header h1 {
     font-size: 2rem;
-    color: #c5d3d8; }
+    color: #ebebeb;
+    margin-bottom: 0; }
   header p {
     font-size: 1.4rem;
-    color: #c5d3d8; }
+    color: #ebebeb; }
 
 nav {
   margin-bottom: calc(170px - 1rem);
@@ -94,14 +98,22 @@ nav {
   flex: 1;
   font-weight: bold; }
 
-#portfolio-link {
-  color: #BF55EC; }
-
-#contact-link {
-  color: #FFB61E; }
-
 .right-link {
   margin-left: 15px; }
+
+#portfolio-link {
+  color: #BF55EC;
+  transition: 0.1s all; }
+  #portfolio-link:hover {
+    color: #59ABE3;
+    transition: 0.1s all; }
+
+#contact-link {
+  color: #FFB61E;
+  transition: 0.1s all; }
+  #contact-link:hover {
+    color: #59ABE3;
+    transition: 0.1s all; }
 
 ul svg {
   vertical-align: sub;
@@ -120,8 +132,6 @@ section {
 
 .benefits {
   grid-column: span 2; }
-  .benefits h1 {
-    margin-bottom: 35px; }
   .benefits ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,9 +140,57 @@ section {
 .benefits-pic img {
   width: 100%; }
 
+.next-links {
+  grid-column: span 2; }
+
+.bottom-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px; }
+
+.button {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  color: #ebebeb;
+  letter-spacing: 0.18rem;
+  transition: 0.1s all; }
+  .button:hover {
+    color: #ebebeb;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.1s all; }
+
+#port {
+  background-color: #BF55EC;
+  transition: 0.1s all; }
+  #port:hover {
+    background-color: #59ABE3;
+    transition: 0.1s all; }
+
+#cont {
+  background-color: #FFB61E;
+  transition: 0.1s all; }
+  #cont:hover {
+    background-color: #59ABE3;
+    transition: 0.1s all; }
+
+.social {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 15px;
+  max-width: 175px; }
+  .social img {
+    width: 100%;
+    transition: 0.1s all; }
+  .social img:hover {
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.2));
+    transition: 0.1s all; }
+
 footer {
   background-color: #555;
-  color: #c5d3d8;
+  color: #ebebeb;
   padding: 30px; }
 
 /*# sourceMappingURL=main.css.map */
