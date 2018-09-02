@@ -90,6 +90,42 @@ article {
   padding: 5px 10px;
   border-left: 4px solid #FFB61E; }
 
+#contact {
+  grid-template-columns: 1fr 1fr;
+  justify-items: start; }
+
+#contact-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px; }
+  #contact-form h1 {
+    grid-column: span 2; }
+
+#message-box {
+  grid-column: span 2; }
+
+label {
+  display: block;
+  margin-bottom: 5px; }
+
+input {
+  width: 100%;
+  height: 30px; }
+
+textarea {
+  width: 100%;
+  height: 150px; }
+
+input, textarea {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  color: #444;
+  padding: 10px;
+  border: 1px solid #FFB61E;
+  background-color: #e4e4e6; }
+
 html {
   font-size: 20px;
   background-color: #ebebeb;
