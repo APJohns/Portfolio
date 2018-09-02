@@ -8,6 +8,7 @@ article {
 	h1 {
 		font-size: 1.5rem;
 		margin-bottom: 15px;
+		padding-bottom: 0.5rem;
 		border-bottom: 2px solid #ddd;
 	}
 
@@ -18,7 +19,6 @@ article {
 	img {
 		width: 100%;
 		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-		min-width: 200px;
 		transition: 0.3s all ease-out;
 
 		&:hover {
@@ -35,15 +35,23 @@ article {
 			background-color: $dark;
 		}
 	}
+
+	@media screen and (max-width: 1000px) {
+		grid-template-columns: 1fr;
+		grid-gap: 15px;
+		padding: 50px;
+	}
 }
 
 .tech-group {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 15px 0;
 }
 
 .tech {
 	margin-right: 15px;
+	margin-bottom: 15px;
 	background-color: $purple;
 	color: $offWhite;
 	padding: 5px 10px;

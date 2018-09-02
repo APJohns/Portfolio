@@ -62,13 +62,13 @@ article {
   article h1 {
     font-size: 1.5rem;
     margin-bottom: 15px;
+    padding-bottom: 0.5rem;
     border-bottom: 2px solid #ddd; }
   article p {
     line-height: 1.5rem; }
   article img {
     width: 100%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-    min-width: 200px;
     transition: 0.3s all ease-out; }
     article img:hover {
       filter: grayscale(80%);
@@ -78,13 +78,20 @@ article {
     background-color: #59ABE3; }
     article .button:hover {
       background-color: #3d4b55; }
+  @media screen and (max-width: 1000px) {
+    article {
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+      padding: 50px; } }
 
 .tech-group {
   display: flex;
+  flex-wrap: wrap;
   margin: 15px 0; }
 
 .tech {
   margin-right: 15px;
+  margin-bottom: 15px;
   background-color: #BF55EC;
   color: #ebebeb;
   padding: 5px 10px;
@@ -101,16 +108,15 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px; }
-  #contact-form h1 {
-    grid-column: span 2; }
 
 #contact-info h1 {
   margin-bottom: 5px;
-  border-bottom: 2px solid #ddd; }
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem; }
 #contact-info p {
   margin-bottom: 15px; }
 #contact-info .social {
-  margin-top: 50px; }
+  margin-top: 30px; }
 
 #message-box {
   grid-column: span 2; }
@@ -164,6 +170,12 @@ html {
   background-color: #ebebeb;
   font-family: 'Lato', sans-serif;
   color: #444; }
+  @media screen and (max-width: 1000px) {
+    html {
+      font-size: 18px; } }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 16px; } }
 
 header, section, footer, article {
   padding-left: 20% !important;
@@ -172,6 +184,10 @@ header, section, footer, article {
     header, section, footer, article {
       padding-left: 10% !important;
       padding-right: 10% !important; } }
+  @media screen and (max-width: 600px) {
+    header, section, footer, article {
+      padding-left: 5% !important;
+      padding-right: 5% !important; } }
 
 a {
   color: #59ABE3;
@@ -199,10 +215,16 @@ header {
   header p {
     font-size: 1.4rem;
     color: #ebebeb; }
+  @media screen and (max-width: 600px) {
+    header {
+      padding-bottom: 100px; } }
 
 nav {
   margin-bottom: calc(170px - 1rem);
   display: flex; }
+  @media screen and (max-width: 600px) {
+    nav {
+      margin-bottom: calc(100px - 1rem); } }
 
 #home {
   flex: 1;
@@ -261,12 +283,16 @@ section {
 .benefits {
   grid-column: span 2; }
   .benefits h1 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
     border-bottom: 2px solid #ddd; }
   .benefits ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 35px; }
+    @media screen and (max-width: 600px) {
+      .benefits ul {
+        grid-template-columns: 1fr;
+        font-size: 1.1rem; } }
 
 .benefits-pic img {
   width: 100%;
@@ -278,6 +304,9 @@ section {
   @media screen and (max-width: 1000px) {
     #next {
       grid-template-columns: 1fr 1fr 1fr; } }
+  @media screen and (max-width: 600px) {
+    #next {
+      grid-template-columns: 1fr; } }
 
 .next-links {
   grid-column: span 2;
@@ -322,13 +351,16 @@ section {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   grid-gap: 15px;
-  max-width: 175px; }
+  max-width: 140px; }
   .social img {
     width: 100%;
     transition: 0.1s all; }
   .social img:hover {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.2));
     transition: 0.1s all; }
+  @media screen and (max-width: 600px) {
+    .social {
+      justify-self: start; } }
 
 footer {
   background-color: #3d4b55;

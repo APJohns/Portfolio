@@ -9,6 +9,14 @@ html {
     background-color: $offWhite;
     font-family: 'Lato', sans-serif;
     color: #444;
+
+    @media screen and (max-width: 1000px) {
+		font-size: 18px;
+	}
+
+    @media screen and (max-width: 600px) {
+		font-size: 16px;
+	}
 }
 
 header, section, footer, article {
@@ -19,6 +27,11 @@ header, section, footer, article {
         padding-left: 10% !important;
         padding-right: 10% !important;
     }
+
+    @media screen and (max-width: 600px) {
+		padding-left: 5% !important;
+        padding-right: 5% !important;
+	}
 }
 
 a {
@@ -54,11 +67,19 @@ header {
         font-size: 1.4rem;
         color: $offWhite;
     }
+
+    @media screen and (max-width: 600px) {
+		padding-bottom: 100px;
+	}
 }
 
 nav {
     margin-bottom: calc(170px - 1rem); // Match with header padding-bottom
     display: flex;
+
+    @media screen and (max-width: 600px) {
+		margin-bottom: calc(100px - 1rem); // Match with header padding-bottom
+	}
 }
 
 #home {
@@ -139,7 +160,7 @@ section {
     grid-column: span 2;
 
     h1 {
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
         border-bottom: 2px solid #ddd;
     }
 
@@ -147,6 +168,11 @@ section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 35px;
+
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+            font-size: 1.1rem;
+        }
     }
 }
 
@@ -164,6 +190,10 @@ section {
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+	}
 }
 
 .next-links {
@@ -216,7 +246,7 @@ section {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     grid-gap: 15px;
-    max-width: 175px;
+    max-width: 140px;
     img {
         width: 100%;
         transition: 0.1s all;
@@ -225,6 +255,10 @@ section {
         filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.2));
         transition: 0.1s all;
     }
+
+    @media screen and (max-width: 600px) {
+		justify-self: start;
+	}
 }
 
 footer {
