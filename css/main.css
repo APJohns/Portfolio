@@ -102,6 +102,10 @@ article {
   grid-template-columns: 1fr 1fr;
   justify-items: start;
   align-items: start; }
+  @media screen and (max-width: 600px) {
+    #contact {
+      grid-template-columns: 1fr;
+      padding: 50px; } }
 
 #contact-form {
   width: 100%;
