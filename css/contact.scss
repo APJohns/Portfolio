@@ -1,6 +1,8 @@
 #contact {
+	padding: 100px;
 	grid-template-columns: 1fr 1fr;
 	justify-items: start;
+	align-items: start;
 }
 
 #contact-form {
@@ -14,10 +16,15 @@
 
 #contact-info {
 	h1 {
-		margin-bottom: 0;
+		margin-bottom: 5px;
+		border-bottom: 2px solid #ddd;
 	}
 	p {
 		margin-bottom: 15px;
+	}
+
+	.social {
+		margin-top: 50px;
 	}
 }
 
@@ -32,12 +39,10 @@ label {
 
 input {
 	width: 100%;
-	height: 30px;
 }
 
 textarea {
 	width: 100%;
-	height: 150px;
 }
 
 input, textarea {
@@ -45,8 +50,39 @@ input, textarea {
 	font-size: 1rem;
 	font-family: 'Lato', sans-serif;
 	color: #444;
-	padding: 10px;
+	padding: 5px 10px;
 	border: none;
-	border-bottom: 1px solid $orange;
+	border-bottom: 1px solid $purple;
 	background-color: rgb(228, 228, 230);
+
+	&:focus {
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+	}
+}
+
+textarea {
+	height: 250px;
+}
+
+select, option {
+	box-sizing: border-box;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	color: #444;
+	border: none;
+	padding: 5px 10px;
+	font-size: 0.75rem;
+	background-color: rgb(228, 228, 230);
+}
+
+#send {
+	border: none;
+	background-color: $link;
+	cursor: pointer;
+	padding: 5px;
+
+	&:hover {
+		background-color: purple;
+		color: $offWhite;
+	}
 }
