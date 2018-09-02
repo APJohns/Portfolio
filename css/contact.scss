@@ -12,6 +12,15 @@
 	h1 {grid-column: span 2;}
 }
 
+#contact-info {
+	h1 {
+		margin-bottom: 0;
+	}
+	p {
+		margin-bottom: 15px;
+	}
+}
+
 #message-box {
 	grid-column: span 2;
 }
@@ -37,6 +46,7 @@ input, textarea {
 	font-family: 'Lato', sans-serif;
 	color: #444;
 	padding: 10px;
-	border: 1px solid $orange;
+	border: none;
+	border-bottom: 1px solid $orange;
 	background-color: rgb(228, 228, 230);
 }

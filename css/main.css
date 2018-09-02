@@ -102,6 +102,11 @@ article {
   #contact-form h1 {
     grid-column: span 2; }
 
+#contact-info h1 {
+  margin-bottom: 0; }
+#contact-info p {
+  margin-bottom: 15px; }
+
 #message-box {
   grid-column: span 2; }
 
@@ -123,7 +128,8 @@ input, textarea {
   font-family: 'Lato', sans-serif;
   color: #444;
   padding: 10px;
-  border: 1px solid #FFB61E;
+  border: none;
+  border-bottom: 1px solid #FFB61E;
   background-color: #e4e4e6; }
 
 html {
