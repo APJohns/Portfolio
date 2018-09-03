@@ -8,7 +8,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans:800" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="javascript/main.js"></script>
 </head>
 <body>
     <header>
@@ -20,51 +19,57 @@
         <h1>Lets chat!</h1>
         <p>Interested? Get in touch!</p>
 		</header>
-		
-		<section id="contact">
-			<form id="contact-form">
-				<div>
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email" required>
-				</div>
-				<div>
-					<label for="subject">Subject</label>
-					<input type="text" id="subject" name="subject" required>
-				</div>
-				<div id="message-box">
-					<label for="message">Message</label>
-					<textarea id="message" required></textarea>
-				</div>
-				<div>
-					<!--label for="budget">Budget</label-->
-					<select required>
-						<option value="">--Choose a Budget--</option>
-						<option value="no idea">No idea</option>
-						<option value="more info">Need more info</option>
-						<option value="200 to 500">$200 - $500</option>
-						<option value="500 to 1000">$500 - $1000</option>
-					</select>
-				</div>
-				<input type="submit" value="Send" id="send" class="button">
-			</form>
-			<div id="contact-info">
-				<h1>Let's make a website.</h1>
-				<p>I'll get back to you promptly to discuss the next steps. Let's work togoether to make your
-					online image the best it can be.
-				</p>
-				<a href="mailto:ashleypjohns@gmail.com">ashleypjohns@gmail.com</a>
 
-				<div class="social">
-            <a href="https://github.com/APJohns"><img src="media/social/GitHub.png"></a>
-            <a href="https://codepen.io/AshJohns"><img src="media/social/Codepen.png"></a>
-            <a href="www.linkedin.com/in/ashley-p-johns"><img src="media/social/LinkedIn.png"></a>
-            <a href="https://twitter.com/AshPJohns"><img src="media/social/Twitter.png"></a>
-        </div>
-			</div>
-		</section>
+		<main>
+		
+			<section id="contact">
+				<form id="contact-form" name="contact" method="POST" netlify>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div>
+						<label for="subject">Subject</label>
+						<input type="text" id="subject" name="subject" required>
+					</div>
+					<div id="message-box">
+						<label for="message">Message</label>
+						<textarea id="message" required></textarea>
+					</div>
+					<div>
+						<!--label for="budget">Budget</label-->
+						<select required>
+							<option value="">--Choose a Budget--</option>
+							<option value="no idea">No idea</option>
+							<option value="more info">Need more info</option>
+							<option value="200 to 500">$200 - $500</option>
+							<option value="500 to 1000">$500 - $1000</option>
+						</select>
+					</div>
+					<input type="submit" value="Send" id="send" class="button">
+				</form>
+				<div id="contact-info">
+					<h1>Let's make a website.</h1>
+					<p>I'll get back to you promptly to discuss the next steps. Let's work together to make your
+						online image the best it can be.
+					</p>
+					<a href="mailto:ashleypjohns@gmail.com">ashleypjohns@gmail.com</a>
+
+					<div class="social">
+							<a href="https://github.com/APJohns"><img src="media/social/GitHub.png"></a>
+							<a href="https://codepen.io/AshJohns"><img src="media/social/Codepen.png"></a>
+							<a href="www.linkedin.com/in/ashley-p-johns"><img src="media/social/LinkedIn.png"></a>
+							<a href="https://twitter.com/AshPJohns"><img src="media/social/Twitter.png"></a>
+					</div>
+				</div>
+			</section>
+
+		</main>
 
     <footer>
         <span>&copy; 2018 Ashley Johns</span>
-    </footer>
+		</footer>
+		
+		<script src="javascript/main.js"></script>
 </body>
 </html>
