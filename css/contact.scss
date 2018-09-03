@@ -1,5 +1,5 @@
 #contact {
-	padding: 100px;
+	padding: 50px;
 	grid-template-columns: 1fr 1fr;
 	justify-items: start;
 	align-items: start;
@@ -57,7 +57,9 @@ input, textarea {
 	padding: 5px 10px;
 	border: none;
 	border-bottom: 1px solid $purple;
+	border-radius: 0;
 	background-color: rgb(228, 228, 230);
+	appearance: none;
 	transition: 0.1s all ease;
 
 	&:focus {
@@ -76,8 +78,10 @@ select, option {
 	font-family: 'Lato', sans-serif;
 	color: #444;
 	border: none;
+	border-radius: 0;
 	padding: 5px 10px;
 	font-size: 0.75rem;
+	appearance: none;
 	background-color: rgb(228, 228, 230);
 }
 
@@ -88,7 +92,7 @@ select, option {
 	padding: 5px;
 
 	&:hover {
-		background-color: purple;
+		background-color: $purple;
 		color: $offWhite;
 	}
 }

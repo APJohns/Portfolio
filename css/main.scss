@@ -91,6 +91,11 @@ main {
     transition: 0.5s all ease;
 }
 
+#main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 #home {
     flex: 1;
     font-weight: bold;
@@ -127,7 +132,7 @@ ul {
 }
 
 section {
-    padding: 200px;
+    padding: 165px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 7%;
