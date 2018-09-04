@@ -7,4 +7,4 @@ for (let i = 0; i < header.length; i++) {
 	}
 }
 
-setTimeout(() => content.style.opacity = 1, 150)
+setTimeout(() => content.style.opacity = 1, 150);
