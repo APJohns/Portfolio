@@ -4,6 +4,7 @@ article {
 	grid-template-columns: 1fr 2fr;
 	grid-gap: 5%;
 	align-items: center;
+	perspective: 800px;
 
 	h1 {
 		font-size: 1.5rem;

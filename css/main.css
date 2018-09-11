@@ -58,7 +58,8 @@ article {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 5%;
-  align-items: center; }
+  align-items: center;
+  perspective: 800px; }
   article h1 {
     font-size: 1.5rem;
     margin-bottom: 15px;
