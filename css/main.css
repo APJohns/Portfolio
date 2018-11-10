@@ -152,6 +152,14 @@ header {
   margin-top: 30px;
   font-size: 1.5rem; }
 
+.cpen a {
+  background-color: #59ABE3;
+  background-image: url("/media/social/Codepen.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%; }
+
 #contact {
   padding: 50px;
   grid-template-columns: 1fr 1fr;

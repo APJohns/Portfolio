@@ -96,7 +96,7 @@
 		display: inline-block;
 		font-size: 2rem;
 		font-weight: bold;
-		background-color: rgb(61, 75, 85);
+		background-color: $dark;
 		padding: 2px 15px;
 		margin-bottom: 15px;
 	}
@@ -127,4 +127,13 @@
 .pad {
 	margin-top: 30px;
 	font-size: 1.5rem;
+}
+
+.cpen a {
+	background-color: $link;
+	background-image: url('/media/social/Codepen.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
 }
