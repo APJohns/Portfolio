@@ -1,4 +1,8 @@
-article {
+#main {
+	border-bottom: 1px dashed #aaa;
+}
+
+#main article {
 	padding: 30px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -12,9 +16,13 @@ article {
 		width: 75%;
 		margin: 25px auto;
 		grid-column-start: span 2;
+
+		@media screen and (max-width: 1000px) {
+			display: none;
+		}
 	}
 
-	h2 {
+	h3 {
 		font-size: 1.5rem;
 		padding-bottom: 0.5rem;
 	}
@@ -26,6 +34,7 @@ article {
 
 	img {
 		width: 100%;
+		min-width: 250px;
 		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
 		transition: 0.3s all ease-out;
 
@@ -64,4 +73,58 @@ article {
 	color: $offWhite;
 	padding: 4px 10px;
 	border-left: 4px solid $orange;
+}
+
+#mini-projects {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 15px;
+	padding: 50px;
+
+	article {
+		display: block;
+		padding: 0;
+	}
+
+	a {
+		display: block;
+		position: relative;
+		box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+	}
+
+	h3 {
+		display: inline-block;
+		font-size: 2rem;
+		font-weight: bold;
+		background-color: rgb(61, 75, 85);
+		padding: 2px 15px;
+		margin-bottom: 15px;
+	}
+
+	img {
+		width: 100%;
+		filter: grayscale(75%);
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 15px;
+	}
+
+	@media screen and (max-width: 1500px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+  @media screen and (max-width: 600px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.pad {
+	margin-top: 30px;
+	font-size: 1.5rem;
 }
