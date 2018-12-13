@@ -9,7 +9,6 @@ gulp.task('autoprefixer', function() {
 		.pipe(postcss([ autoprefixer() ]))
 		.pipe(gulp.dest('./css'))
 });
-
 gulp.task('sass', function(){
   return gulp.src('./css/main.scss')
     .pipe(sass())
@@ -24,8 +23,8 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('watch', ['browserSync', 'sass', 'autoprefixer'], function(){
-  gulp.watch('./css/*.scss', ['sass']); 
+  gulp.watch('./css/*.scss', ['sass']);
 	gulp.watch('./css/*.css', ['autoprefixer']);
 	gulp.watch('./*.html', browserSync.reload);
 	gulp.watch('./javascripts/*.js', browserSync.reload);
-})
+});
