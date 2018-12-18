@@ -65,7 +65,7 @@ header {
   #main article:not(:last-child)::after {
     border-bottom: 2px solid #ddd;
     display: block;
-    content: '';
+    content: "";
     width: 75%;
     margin: 25px auto;
     grid-column-start: span 2; }
@@ -114,7 +114,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
-  padding: 50px; }
+  padding: 50px;
+  border-bottom: 1px dashed #aaa; }
   #mini-projects article {
     display: block;
     padding: 0; }
