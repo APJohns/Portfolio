@@ -1,26 +1,28 @@
 {
-  "name": "local-notes",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "A notes app that stores information to localstorage.",
-  "main": "gulpfile.js",
+  "description": "A portfolio website for Ashley Johns.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/APJohns/local-notes.git"
+    "url": "git+https://github.com/APJohns/Portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/APJohns/local-notes/issues"
+    "url": "https://github.com/APJohns/Portfolio/issues"
   },
-  "homepage": "https://github.com/APJohns/local-notes#readme",
-  "devDependencies": {
-    "autoprefixer": "^9.3.1",
-    "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2"
-  }
+  "homepage": "https://github.com/APJohns/Portfolio#readme"
 }

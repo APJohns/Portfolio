@@ -1,30 +1,46 @@
-const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-const sass = require('gulp-sass');
-const autoprefixer = require('autoprefixer');
-const browserSync = require('browser-sync').create();
+const gulp = require("gulp");
+const pug = require("gulp-pug");
+const sass = require("gulp-sass");
+const babel = require("gulp-babel");
 
-gulp.task('autoprefixer', function() {
-	return gulp.src('./css/*.css')
-		.pipe(postcss([ autoprefixer() ]))
-		.pipe(gulp.dest('./css'))
+gulp.task("default", defaultTask);
+
+function defaultTask(done) {
+  // place code for your default task here
+  done();
+}
+
+gulp.task("pug", function() {
+  return gulp
+    .src("./src/templates/*.pug")
+    .pipe(
+      pug({
+        doctype: "html",
+        pretty: false
+      })
+    )
+    .pipe(gulp.dest("./public/"));
 });
-gulp.task('sass', function(){
-  return gulp.src('./css/main.scss')
+
+gulp.task("sass", function() {
+  return gulp
+    .src("./src/css/main.scss")
     .pipe(sass())
-		.pipe(gulp.dest('./css'))
-		.pipe(browserSync.reload({ stream: true }))
+    .pipe(gulp.dest("./public/"));
 });
 
-gulp.task('browserSync', function() {
-	browserSync.init({
-		server: { baseDir: './' }
-	});
+gulp.task("babel", function() {
+  return gulp
+    .src("src/javascript/*.js")
+    .pipe(babel())
+    .pipe(gulp.dest("./public/"));
 });
 
-gulp.task('watch', ['browserSync', 'sass', 'autoprefixer'], function(){
-  gulp.watch('./css/*.scss', ['sass']);
-	gulp.watch('./css/*.css', ['autoprefixer']);
-	gulp.watch('./*.html', browserSync.reload);
-	gulp.watch('./javascripts/*.js', browserSync.reload);
-});
+gulp.task(
+  "watch",
+  gulp.series("pug", "sass", "babel", function() {
+    gulp.watch("./src/templates/*.pug", gulp.series("pug"));
+    gulp.watch("./src/css/*.scss", gulp.series("sass"));
+    gulp.watch("./src/js/*.js", gulp.series("babel"));
+  })
+);

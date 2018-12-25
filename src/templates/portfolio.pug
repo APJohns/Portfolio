@@ -1,0 +1,191 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Ashley Johns
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='icon', type='image/png', href='media/favicon.png')
+    link(href='https://fonts.googleapis.com/css?family=Lato|Work+Sans:800', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', media='screen', href='css/main.css')
+    script(src='javascript/main.js', defer='')
+  body
+    header
+      nav
+        span#home
+          a(href='index.html') Ashley Johns | Frontend Developer
+        a#portfolio-link.right-link(href='portfolio.html') Portfolio
+        a#contact-link.right-link(href='contact.html') Contact
+      h1 Here's some of my work.
+      p Developed using the latest standards to work on any device.
+    main#main
+      article
+        a(href='https://snacksnearu.herokuapp.com')
+          img(src='media/sites/snacks.png', alt='snacksnearu thumbnail')
+        .site-info
+          h3 SnacksNearU
+          .tech-group
+            .tech HTML
+            .tech CSS
+            .tech JavaScript
+            .tech Node.JS / Express
+            .tech Sass
+            .tech Gulp
+            .tech Yelp API
+          p
+            | Not sure what's around to eat? Looking for a nearby spot to grab a
+            | drink? SnacksNearU uses the Yelp API to find search results of food
+            | locations near you. The site allows you to set your radius, only
+            | show open locations, and sort by different variables. The site shows
+            | you one result at a time, avoiding overwhelming lists.
+          a(href='https://github.com/APJohns/SnacksNearU') View Code
+      article
+        a(href='/')
+          img(src='media/sites/portfolio.png', alt='portfolio thumbnail')
+        .site-info
+          h3 This Portfolio
+          .tech-group
+            .tech HTML
+            .tech CSS
+            .tech JavaScript
+            .tech Sass
+          p
+            | My portfolio itself showcases my design skills. Developed using the
+            | latest design and development practices to showcase my work and let
+            | you get in touch with me.
+          a(href='https://github.com/APJohns/Portfolio') View Code
+      article
+        a(href='http://todo-aj.herokuapp.com/')
+          img(src='media/sites/todo.png', alt='todo thumbnail')
+        .site-info
+          h3 Todo List
+          .tech-group
+            .tech HTML
+            .tech CSS
+            .tech JavaScript
+            .tech Node.js / Express
+          p
+            | This todo list was my first project using node.js. It was a way to
+            | get my feet wet with backend work. It is a simple web app, anyone
+            | can add or remove entries on the todo list, and the todo list is the
+            | same for everyone who views it. All the data is stored on a monogoDB
+            | database hosted by mLab.
+          a(href='https://github.com/APJohns/todo') View Code
+      article
+        a(href='https://apjohns.github.io/redDust/')
+          img(src='media/sites/dust.png', alt='red dust thumbnail')
+        .site-info
+          h3 Red Dust
+          .tech-group
+            .tech HTML
+            .tech CSS
+            .tech JavaScript
+          p
+            | Red Dust is a game about building a colony on mars. You use
+            | resources to build things which inmprove your resource gain. You do
+            | this all while maintaining energy levels to keep your colony
+            | running.
+          a(href='https://github.com/APJohns/redDust') View Code
+      article
+        a(href='http://kathybarrypiano.com/')
+          img(src='media/sites/piano.png', alt='barry piano thumbnail')
+        .site-info
+          h3 Kathy Barry Piano
+          .tech-group
+            .tech HTML
+            .tech CSS
+            .tech JavaScript
+          p
+            | A client project I did for a local piano teacher. This was my first
+            | client site. It consists of a unique navigation menu, and all the
+            | information for the business.
+          a(href='https://github.com/APJohns/KathyBarryPiano') View Code
+    h2.pad Micro-Projects
+    aside#mini-projects
+      .mini
+        a(href='https://thenextfrontier.netlify.com/')
+          img(src='media/sites/solar.png', alt='solar thumbnail')
+          .overlay
+            h3 Solar System
+            .tech-group
+              .tech HTML
+              .tech CSS
+              .tech JavaScript
+              .tech Gulp
+      .mini
+        a(href='https://apjohns.github.io/audio-visualizer/')
+          img(src='media/sites/audio.png', alt='audio thumbnail')
+          .overlay
+            h3 Audio Visualizer
+            .tech-group
+              .tech HTML
+              .tech CSS
+              .tech JavaScript
+              .tech Canvas API
+              .tech Web Audio API
+      .mini
+        a(href='https://local-note.netlify.com/')
+          img(src='media/sites/local-notes.png', alt='local notes thumbnail')
+          .overlay
+            h3 Local Notes
+            .tech-group
+              .tech HTML
+              .tech CSS
+              .tech JavaScript
+              .tech JS LocalStorage
+              .tech Sass
+              .tech Gulp
+      .mini
+        a(href='https://apjohns.github.io/morseTranslator/')
+          img(src='media/sites/morse.png', alt='morse thumbnail')
+          .overlay
+            h3 Morse
+            .tech-group
+              .tech HTML
+              .tech CSS
+              .tech JavaScript
+      .mini
+        a(href='https://apjohns.github.io/JSCalculator/')
+          img(src='media/sites/calculator.png', alt='calculator thumbnail')
+          .overlay
+            h3 Calculator
+            .tech-group
+              .tech HTML
+              .tech CSS
+              .tech JavaScript
+      .mini.cpen
+        a(href='https://codepen.io/AshJohns')
+          .overlay
+            h3 Check out my Codepen!
+    h2.pad Relevant Courses
+    p.pad(style='font-size: 1rem;')
+      | These are proejcts I have completed through tutorials and courses
+      | including
+      a(href='https://wesbos.com/courses/') Wes Bos
+      |  and
+      a(href='https://www.leveluptutorials.com/') Level Up Tutorials
+    aside#mini-projects
+      .mini
+        a(href='https://catch-of-the-day-ash.netlify.com/')
+          img(src='media/sites/catch.png', alt='catch thumbnail')
+          .overlay
+            h3 Catch of the Day (Wes Bos)
+            .tech-group
+              .tech HTML
+              .tech CSS
+              .tech JavaScript
+              .tech React
+              .tech Firebase
+      .mini
+        a(href='https://lumdb-aj.netlify.com/')
+          img(src='media/sites/moviedb.png', alt='moviedb thumbnail')
+          .overlay
+            h3 MovieDB (Level Up Tuts)
+            .tech-group
+              .tech HTML
+              .tech CSS
+              .tech JavaScript
+              .tech React
+              .tech TMDb API
+    footer
+      span © 2018 Ashley Johns
