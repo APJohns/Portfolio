@@ -82,9 +82,10 @@
   padding: 50px;
   border-bottom: 1px dashed #aaa;
 
-  article {
+  .mini {
     display: block;
     padding: 0;
+    width: 100%;
   }
 
   a {
@@ -130,11 +131,7 @@
   font-size: 1.5rem;
 }
 
-.cpen a {
-  background-color: $link;
-  background-image: url("/media/social/Codepen.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
+.cpen {
+  text-align: right;
+  grid-column: span 3;
 }

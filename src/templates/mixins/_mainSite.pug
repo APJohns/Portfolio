@@ -1,0 +1,11 @@
+mixin mainSite(site)
+  article
+      a(href=site.link)
+        img(src=site.image, alt='#{site.name} thumbnail')
+      .site-info
+        h3=site.name
+        .tech-group
+          each tech in site.tech
+            .tech=tech
+        p=site.desc
+        a(href=site.code) View on Github

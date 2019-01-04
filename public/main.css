@@ -116,9 +116,10 @@ header {
   grid-gap: 15px;
   padding: 50px;
   border-bottom: 1px dashed #aaa; }
-  #mini-projects article {
+  #mini-projects .mini {
     display: block;
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
   #mini-projects a {
     display: block;
     position: relative;
@@ -151,13 +152,9 @@ header {
   margin-top: 30px;
   font-size: 1.5rem; }
 
-.cpen a {
-  background-color: #59ABE3;
-  background-image: url("/media/social/Codepen.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%; }
+.cpen {
+  text-align: right;
+  grid-column: span 3; }
 
 #contact {
   padding: 50px;
