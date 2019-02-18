@@ -92,6 +92,7 @@ header {
     width: 100%;
     font-size: 1.7rem;
     font-family: "Work Sans", sans-serif;
+    font-weight: bold;
     top: calc(50% - 1.7rem);
     text-align: center;
     color: white;
