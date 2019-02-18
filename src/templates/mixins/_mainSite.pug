@@ -1,6 +1,7 @@
 mixin mainSite(site)
   article
-      a(href=site.link)
+      a(href=site.link).site-link
+        p.view View Site
         img(src=site.image, alt='#{site.name} thumbnail')
       .site-info
         h3=site.name

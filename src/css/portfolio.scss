@@ -32,17 +32,41 @@
     margin-bottom: 15px;
   }
 
-  img {
-    width: 100%;
-    min-width: 250px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
-    transition: 0.3s all ease-out;
+  .site-link {
+    position: relative;
 
-    &:hover {
-      filter: grayscale(80%);
+    &:hover img {
+      filter: grayscale(0%);
       box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
       transition: 0.3s all ease-out;
     }
+
+    &:hover .view {
+      opacity: 0;
+      transition: 0.3s all ease-out;
+    }
+  }
+
+  .view {
+    position: absolute;
+    width: 100%;
+    font-size: 1.7rem;
+    font-family: "Work Sans", sans-serif;
+    top: calc(50% - 1.7rem);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+    opacity: 0.9;
+    z-index: 10;
+    transition: 0.3s all ease-out;
+  }
+
+  img {
+    width: 100%;
+    min-width: 250px;
+    filter: grayscale(55%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.3s all ease-out;
   }
 
   .button {
