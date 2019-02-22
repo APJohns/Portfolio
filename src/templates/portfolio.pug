@@ -51,9 +51,17 @@ block content
     })
   h2.pad Micro-Projects
   p(style='font-size: 1rem;').pad Check out my
-    a(href="https://codepen.io/AshJohns") codepen
-    | &nbsp;for more.
+    a(href="https://codepen.io/AshJohns") &nbsp;Codepen
+    | &nbsp;for more. Or dive into my
+    a(href="https://github.com/APJohns") &nbsp;Github
+    | &nbsp; to see the code.
   aside#mini-projects
+    +microProject({
+      name: "whereISS",
+      tech: ["HTML", "CSS", "Javascript", "Fetch", "APIs", "Async/Await"],
+      image: "./media/sites/iss.png",
+      link: "https://apjohns.github.io/whereISS/"
+    })
     +microProject({
       name: "Solar System",
       tech: ["HTML", "CSS", "Javascript", "Gulp"],
