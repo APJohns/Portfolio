@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -497,3 +497,15 @@ footer {
   background-color: #3d4b55;
   color: #ebebeb;
   padding: 30px; }
+
+  .disclaimer {
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-weight: normal;
+    color: white;
+    background: #c0392b;
+  }
+
+  .disclaimer strong {
+    font-weight: 800;
+  }
