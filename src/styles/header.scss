@@ -1,0 +1,26 @@
+.header {
+  padding-bottom: 40px;
+  background: skyblue;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .nav-links a {
+      margin-left: 20px;
+    }
+  }
+
+  .header-img {
+    width: 33%;
+    height: 200px;
+    background: slategrey;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

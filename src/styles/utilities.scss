@@ -1,0 +1,33 @@
+
+.padding-primary {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .padding-primary {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .padding-primary {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .padding-primary {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .padding-primary {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
