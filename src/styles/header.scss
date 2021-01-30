@@ -1,26 +1,14 @@
-.header {
-  padding-bottom: 40px;
-  background: skyblue;
+.site-header {
+  color: var(--font-color-header);
+  background: linear-gradient(45deg, var(--header-background-from), var(--header-background-to));
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-
-    .nav-links a {
-      margin-left: 20px;
-    }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--font-color-header);
   }
+}
 
-  .header-img {
-    width: 33%;
-    height: 200px;
-    background: slategrey;
-  }
-
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.placeholder-img {
+  height: 200px;
+  background: slategrey;
 }
