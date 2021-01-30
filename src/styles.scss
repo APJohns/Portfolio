@@ -2,6 +2,10 @@
 @import './styles/utilities.scss';
 @import './styles/header.scss';
 
+html {
+  font-family: 'Fira Sans', sans-serif;
+}
+
 body {
   margin: 0;
 }
