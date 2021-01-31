@@ -3,10 +3,11 @@
   --font-color-primary-inverse: #{$coconut};
 
   --background-primary : #{$coconut};
+  --background-secondary : #{$slate};
+
+  --border-color-primary: #{$slate25};
 
   --font-color-header: #{$coconut};
   --header-background-from: #{$royal40};
   --header-background-to: #{$royal};
-
-  --footer-background: #{$slate};
 }
