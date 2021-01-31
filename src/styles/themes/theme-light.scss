@@ -1,4 +1,4 @@
-:root {
+@mixin theme-light {
   --font-color-primary: #{$midnight};
   --font-color-primary-inverse: #{$coconut};
 
@@ -7,4 +7,6 @@
   --font-color-header: #{$coconut};
   --header-background-from: #{$royal40};
   --header-background-to: #{$royal};
+
+  --footer-background: #{$slate};
 }

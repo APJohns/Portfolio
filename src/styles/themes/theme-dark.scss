@@ -1,5 +1,8 @@
-html[data-theme="dark"] {
+@mixin theme-dark {
   --font-color-primary: #{$coconut};
   --font-color-primary-inverse: #{$midnight};
+
   --background-primary : #{$midnight};
+
+  --footer-background: #{$slate25};
 }

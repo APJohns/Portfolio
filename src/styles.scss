@@ -2,10 +2,9 @@
 @import './styles/utilities.scss';
 @import './styles/typography.scss';
 @import './styles/header.scss';
+@import './styles/about.scss';
 @import './styles/footer.scss';
-
-@import './styles/themes/theme-light.scss';
-@import './styles/themes/theme-dark.scss';
+@import './styles/themes/themes.scss';
 
 html, body {
   margin: 0;

@@ -1,10 +1,4 @@
-const themeToggle = document.querySelector('#js-themeToggle');
-const html = document.querySelector('html');
+import './scripts/theme-toggle';
 
-let theme = 'light';
-html.dataset.theme = theme;
-
-themeToggle.addEventListener('click', () => {
-  theme === 'light' ? theme = 'dark' : theme = 'light';
-  html.dataset.theme = theme;
-});
+// Maintain copyright year
+document.querySelector('#cpyYear').textContent = new Date().getFullYear();

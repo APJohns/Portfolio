@@ -17,9 +17,9 @@
 </head>
 <body>
   <a href="#mainContent" class="skip-link">Skip to main content</a>
-  <header class="site-header mb-5 pt-3 pb-5">
+  <header class="site-header mb-5 pt-4 pb-4 pb-md-5">
     <div class="container">
-      <nav class="row justify-content-between mb-3">
+      <nav class="row justify-content-between mb-4 mb-md-5">
 
         <div class="col-auto">
           <a href="#">Ash Johns</a>
@@ -34,19 +34,29 @@
               <a href="#timeline">Timeline</a>
             </div>
             <div class="col-auto">
-              <button id="js-themeToggle">Toggle Theme</button>
+              <div class="theme-toggle">
+                <input type="checkbox" id="darkModeToggle">
+                <label for="darkModeToggle" id="darkModeToggleLabel" aria-label="Dark mode">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                  </svg>
+                </label>
+              </div>
             </div>
           </div>
         </div>
 
       </nav>
 
-      <div class="row align-items-center">
+      <div class="row align-items-center hero">
         <div class="col-md-8">
-          <h1>UX / Front End Developer</h1>
+          <h1 class="my-sm-4 my-md-5">UX / Front End Developer</h1>
         </div>
-        <div class="col-md-4">
-          <div class="placeholder-img"></div>
+        <div class="col-md-4 d-none d-md-block">
+          <img src="./images/hero.svg" alt="" class="hero-image">
         </div>
       </div>
     </div>
@@ -88,8 +98,11 @@
   <footer class="site-footer py-3">
     <div class="container">
       <div class="row">
-        <div class="col">
-          Footer
+        <div class="col-auto ms-auto">
+          <small>
+            Copyright &copy; 2020 - <span id="cpyYear"></span>
+            Ashley Johns. All rights reserved.
+          </small>
         </div>
       </div>
     </div>
