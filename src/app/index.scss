@@ -26,11 +26,18 @@
   }
 }
 
-.portfolio {
-  background: var(--background-secondary);
+.social-links {
+  a {
+    display: block;
+  }
+
+  svg {
+    margin-right: 5px;
+    height: 1rem;
+    color: var(--font-color-primary);
+  }
 }
 
-.screenshot {
-  display: block;
-  width: 100%;
+.portfolio {
+  background: var(--background-secondary);
 }

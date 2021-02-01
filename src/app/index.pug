@@ -19,8 +19,20 @@ block main
             | Hi! I got an Informatics degree from UMass Amherst, and have been working at Epsilon as a UX Developer since. When I'm not coding you can usually find me playing the piano/guitar, exploring Boston, attempting to learn to cook, hanging out with friends and family, or staring through the eyepiece of a telescope.
         .col-md-4
           h2.visual-h3 Contact Me
-          p Looking for a developer, or need a website? Shoot me an email!
-          a(href='mailto:mail@ashpjohns.com') mail@ashpjohns.com
+          .row
+            .col
+              p Looking for a developer, or need a website? Shoot me an email!
+              a(href='mailto:mail@ashpjohns.com') mail@ashpjohns.com
+            .col-auto.ms-auto.social-links
+              a(href='https://github.com/APJohns')
+                include components/svgs/github.svg
+                | GitHub
+              a(href='https://codepen.io/AshJohns')
+                include components/svgs/codepen.svg
+                | CodePen
+              a(href='https://www.linkedin.com/in/ashley-p-johns')
+                include components/svgs/linkedin.svg
+                | LinkedIn
   section#portfolio.portfolio.pb-5
     .section-heading.mb-4
       .container
