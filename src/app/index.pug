@@ -3,6 +3,9 @@ extends ./components/layout.pug
 include ./components/header.pug
 include ./components/card.pug
 
+block head
+  link(rel='stylesheet' href='index.scss')
+
 block header
   +header('UX / Front End Developer', '', '/../images/hero.svg')
 
@@ -28,8 +31,8 @@ block main
       .row
         .col-3.mb-5
           +card(
-            'Blueprint',
             'Epsilon',
+            'Blueprint',
             '/../images/blueprint-icon.png',
             '/projects/blueprint.pug'
           )

@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+.tech-stack {
+  display: flex;
+  padding: 0;
+
+  li {
+    font-size: $font-size-small;
+    border-radius: 2px;
+    padding: 1px 6px 2px;
+    list-style: none;
+    background: $slate;
+
+    &:not(:last-of-type) {
+      margin-right: 12px;
+    }
+  }
+}
+
+.screenshot {
+  width: 100%;
+}
