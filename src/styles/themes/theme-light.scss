@@ -1,6 +1,7 @@
 @mixin theme-light {
   --font-color-primary: #{$midnight};
   --font-color-primary-inverse: #{$coconut};
+  --font-color-secondary: #{$slate40};
 
   --background-primary : #{$coconut};
   --background-secondary : #{$slate};
