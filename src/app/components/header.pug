@@ -3,7 +3,11 @@ mixin header(title, subTitle, image)
     .container
       nav.row.justify-content-between.mb-4.mb-md-5
         .col-auto
-          a(href='/index.pug') Ash Johns
+          a(href='/index.pug').logo
+            include svgs/logo.svg
+            .logo-text Ash
+              br
+              | Johns
         .col-auto.ml-auto.nav-links
           .row
             .col-auto
