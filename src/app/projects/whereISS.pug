@@ -1,0 +1,28 @@
+extends ../components/layout.pug
+
+include ../components/header.pug
+include ../components/card.pug
+
+block head
+  link(rel='stylesheet' href='project.scss')
+
+block header
+  +header('WhereISS', 'Mini-Project')
+
+block main
+  section.py-5
+    .container
+      .row
+        .col-md-7
+          p
+            | Description coming soon.
+          ul(aria-label='Tech stack').tech-stack
+            li HTML
+            li CSS
+            li Javascript
+            li APIs
+            li Fetch
+            li Async/Await
+          a(href='https://apjohns.github.io/whereISS/') View Website
+        .col-md-5.pt-4.pt-md-0
+          img.screenshot(src='/../images/whereISS-icon.png' alt='whereISS')
