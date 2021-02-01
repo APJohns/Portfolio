@@ -4,8 +4,8 @@
   "description": "A portfolio website for Ashley Johns.",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "start": "parcel src/app/index.pug",
+    "build": "parcel build src/app/index.pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/APJohns/Portfolio#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
     "sass": "^1.32.5"
   }
 }

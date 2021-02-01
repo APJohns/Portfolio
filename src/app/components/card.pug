@@ -1,0 +1,6 @@
+mixin card(title, subTitle, image, link)
+  a.card(href=link)
+    .card-header.mb-4
+      h3.card-title= title
+      h4.card-sub-title= subTitle
+    img.screenshot(src=image alt=title)

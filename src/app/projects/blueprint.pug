@@ -1,0 +1,26 @@
+extends ../components/layout.pug
+
+include ../components/header.pug
+include ../components/card.pug
+
+block header
+  +header('Blueprint', 'Epsilon')
+
+block main
+  section.py-5
+    .container
+      .row
+        .col-7
+          p
+            | At Epsilon, I developed an Angular component library called Blueprint from concept to production. Ensured all components were Web Content Accessibility Guidelines (WCAG) compliant.
+          a(href='https://epsilon-blueprint.netlify.app') View Website
+          h4 Tech Stack
+          ul
+            li HTML
+            li CSS
+            li Javascript
+            li Angular
+            li Sass
+            li npm
+        .col-5
+          img.screenshot(src='/../images/blueprint.png' alt='Blueprint')

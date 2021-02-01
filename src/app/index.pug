@@ -1,0 +1,35 @@
+extends ./components/layout.pug
+
+include ./components/header.pug
+include ./components/card.pug
+
+block header
+  +header('UX / Front End Developer', '', '/../images/hero.svg')
+
+block main
+  section#about.about.py-5
+    .container
+      .row.my-5
+        .col-md-8
+          h2.visual-h3 What I do
+          p
+            | Hi! I got an Informatics degree from UMass Amherst, and have been working at Epsilon as a UX Developer since. When I'm not coding you can usually find me playing the piano/guitar, exploring Boston, attempting to learn to cook, hanging out with friends and family, or staring through the eyepiece of a telescope.
+        .col-md-4
+          h2.visual-h3 Contact Me
+          p Looking for a developer, or need a website? Shoot me an email!
+          a(href='mailto:mail@ashpjohns.com') mail@ashpjohns.com
+  section#portfolio.portfolio.pb-5
+    .section-heading.mb-4
+      .container
+        .row
+          .col
+            h2 My Work
+    .container
+      .row
+        .col-3.mb-5
+          +card(
+            'Blueprint',
+            'Epsilon',
+            '/../images/blueprint-icon.png',
+            '/projects/blueprint.pug'
+          )
