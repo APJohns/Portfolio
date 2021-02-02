@@ -14,16 +14,23 @@ block main
     .container
       .row
         .col-md-7
-          p
-            | At Epsilon, I developed an Angular component library called Blueprint from concept to production. Ensured all components were Web Content Accessibility Guidelines (WCAG) compliant.
-          ul(aria-label='Tech stack').tech-stack
+          .mb-4
+            p
+              | The primary project I worked on at Epsilon was an Angular component library called Blueprint. Blueprint was built with UX and Accessibility at the core, meeting Web Content Accessibility Guidelines (WCAG). It improved the consistency and user experience of the Epsilon products, and cut down on development time.
+            p
+              | We were a small team consisting of two designers and two developers. My initial task was to figure out how to deliver Blueprint to Epsilon's products. The solution was to create an NPM package built on an Angular library. Once this was complete my focus moved to building out new components, enhancing existing components based on feedback, maintaining documentation, and supporting products with any front end issues.
+          ul(aria-label='Tech stack').tech-stack.mb-4
             li HTML
             li CSS
-            li Javascript
-            li Angular
             li Sass
+            li Javascript
+            li Typescript
+            li Angular
+            li Gulp
             li npm
-          a(href='https://epsilon-blueprint.netlify.app').d-block.mb-1 View Website
-          a(href='https://github.com/epsilon-ux/blueprint-ui').d-block View Code
+          .mb-1
+            a(href='https://epsilon-blueprint.netlify.app') View Website
+          .mb-1
+            a(href='https://github.com/epsilon-ux/blueprint-ui') View Code
         .col-md-5.pt-4.pt-md-0
           img.screenshot(src='/../images/blueprint.png' alt='Blueprint')
