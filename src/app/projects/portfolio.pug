@@ -1,0 +1,37 @@
+extends ../components/layout.pug
+
+include ../components/header.pug
+include ../components/card.pug
+
+block title
+  title Ash Johns | Portfolio
+
+block header
+  +header('Portfolio', 'Ash Johns')
+
+block main
+  section.py-5
+    .container
+      .row
+        .col-md-7
+          .mb-4
+            p
+              | This portfolio itself is a good example of my work. The technical goals in making this site were to maximize performance, accessibility, and user experience.
+            p
+              | Considering the simplicity of the site, I chose not to reach for a framework. This decision decreased bundle size and increased performance. Instead, I used Pug templates and Sass to keep the code clean, reusable, and scalable. These assets were bundled using Parcel.
+            p
+              | The site design is also very flexible. Reused code is handled with components using pug mixins. All Sass variables are abstracted e.g. background-color-primary. This results in the ability to quickly swap out styles while maintaining the semantic naming of the variables.
+            p
+              | Accessibility was built into the foundation of the design and code. The site meets Web Content Accessibility Guidelines (WCAG). This includes contrast rations, semantic markup, aria attributes, keyboard navigation, focus states, responsiveness, scalable font, and much much more.
+          ul(aria-label='Tech stack').tags.mb-4
+            li HTML
+            li CSS
+            li Sass
+            li Javascript
+            li Bootstrap
+            li Pug
+            li Parcel
+          .mb-1
+            a(href='https://github.com/APJohns/Portfolio') View Code
+        .col-md-5.pt-4.pt-md-0
+          img(src='/../images/portfolio.png' alt='Portfolio').w-100
