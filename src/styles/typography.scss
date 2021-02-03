@@ -36,3 +36,12 @@ h4,
     color: var(--font-color-primary);
   }
 }
+
+a {
+  color: var(--link-color);
+
+  &:hover,
+  &:focus {
+    color: var(--link-color-hover);
+  }
+}

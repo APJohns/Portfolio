@@ -3,6 +3,9 @@
   --font-color-primary-inverse: #{$coconut};
   --font-color-secondary: #{$slate40};
 
+  --link-color: #{$marine};
+  --link-color-hover: #{$marine40};
+
   --background-primary : #{$coconut};
   --background-secondary : #{$slate};
 
@@ -11,5 +14,4 @@
   --font-color-header: #{$coconut};
   --header-background-from: #{$royal40};
   --header-background-to: #{$royal};
-
 }
