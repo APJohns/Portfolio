@@ -1,6 +1,7 @@
 @mixin theme-dark {
   --font-color-primary: #{$coconut};
   --font-color-primary-inverse: #{$midnight};
+  --font-color-secondary: #{$slate};
 
   --background-primary : #{$midnight};
   --background-secondary: #{$slate25};

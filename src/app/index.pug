@@ -39,8 +39,8 @@ block main
                 span(aria-hidden='true')
                   include components/svgs/linkedin.svg
                 | LinkedIn
-  section#portfolio.portfolio.pb-5
-    .section-heading.mb-4
+  section#portfolio.portfolio.pb-5.u-border-bottom-primary
+    .section-heading.mb-5
       .container
         .row
           .col
@@ -56,15 +56,8 @@ block main
           )
         li.col-3.mb-5
           +card(
-            'WhereISS',
-            'Mini-Project',
+            'Mini Projects',
+            'Misc.',
             '/../images/whereISS-icon.png',
-            '/projects/whereISS.pug'
-          )
-        li.col-3.mb-5
-          +card(
-            'Convo / Coffee',
-            'Mini-Project',
-            '/../images/convo-icon.png',
-            '/projects/convocoffee.pug'
+            '/projects/mini-projects.pug'
           )

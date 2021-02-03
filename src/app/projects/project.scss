@@ -2,19 +2,25 @@
 
 .tech-stack {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
 
   li {
-    font-size: $font-size-small;
+    margin-bottom: 12px;
     border-radius: 2px;
     padding: 1px 6px 2px;
     list-style: none;
-    background: $slate;
+    font-size: $font-size-small;
+    background: var(--background-secondary);
 
     &:not(:last-of-type) {
       margin-right: 12px;
     }
   }
+}
+
+.u-bg-secondary .tech-stack li {
+  background: var(--background-primary);
 }
 
 .screenshot {
