@@ -23,12 +23,12 @@ html(lang='en')
     footer.site-footer.py-4
       .container
         .row.align-items-end
-          .col
+          .col.text-center.text-md-start
             .row.mb-3
               .col
                 div Ashley Johns
                 a(href='mailto:mail@ashpjohns.com') mail@ashpjohns.com
-            .row
+            .row.justify-content-center.justify-content-md-start
               .col-auto
                 a(href='https://github.com/APJohns' aria-label='Github').icon-link
                   include svgs/github.svg
@@ -38,7 +38,7 @@ html(lang='en')
               .col-auto
                 a(href='https://www.linkedin.com/in/ashley-p-johns' aria-label='LinkedIn').icon-link
                   include svgs/linkedin.svg
-          .col-auto.ms-auto.text-end
+          .col-12.col-md-auto.ms-auto.text-center.text-md-end
             small
               | Copyright &copy; 2020 -
               span= new Date().getFullYear()
