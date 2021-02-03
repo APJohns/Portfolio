@@ -1,6 +1,6 @@
 mixin panel(heading, tags, tagLabel, siteLink, codeLink, image)
-  .panel
-    .panel-body
+  .row.g-0.panel
+    .col-md-7.panel-body
       h2= heading
       ul(aria-label=tagLabel).tags
         each tag in tags
@@ -10,6 +10,6 @@ mixin panel(heading, tags, tagLabel, siteLink, codeLink, image)
           a(href=siteLink) View Website
         .mb-1
           a(href=codeLink) View Code
-    .panel-image
+    .col-md-5.panel-image
       // Image conveys information already stated in panel so aria hiding
       img(src=image alt='' aria-hieen='true')
