@@ -1,10 +1,7 @@
 extends ../components/layout.pug
 
 include ../components/header.pug
-include ../components/card.pug
-
-block head
-  link(rel='stylesheet' href='project.scss')
+include ../components/panel.pug
 
 block header
   +header('Mini Projects', '')
@@ -13,40 +10,30 @@ block main
   section.py-5
     .container
       .row
-        .col-md-8
-          h2 WhereISS
-          p
-            | Tracks the Internationl Space Station (ISS) relative to earth. Pulls the data from an API and renders it using Leaflet. The user then has the ability to get the flyover time for their location. This utilizes the Geolocation API. The current astronauts in space are also listed.
-          ul(aria-label='Tech stack').tech-stack
-            li HTML
-            li CSS
-            li Javascript
-            li Fetch API
-            li Geolocation API
-            li Leaflet
-          .mb-1
-            a(href='https://apjohns.github.io/whereISS/') View Website
-          .mb-1
-            a(href='https://github.com/APJohns/whereISS') View Code
-        .col-md-4.pt-4.pt-md-0
-          img.screenshot(src='/../images/whereISS-icon.png' alt='whereISS')
-  section.py-5.u-bg-secondary
-    .container
-      .row
-        .col-md-8
-          h2 Convo / Coffee
-          p
-            | A basic chat application built using React and Firebase. Built to better understand syncing state to Firebase and general React concepts. Create/join a room, choose your name, and get chatting!
-          ul(aria-label='Tech stack').tech-stack
-            li HTML
-            li CSS
-            li Javascript
-            li React
-            li Sass
-            li Firebase
-          .mb-1
-            a(href='https://convo.netlify.com/') View Website
-          .mb-1
-            a(href='https://github.com/APJohns/devChat') View Code
-        .col-md-4.pt-4.pt-md-0
-          img.screenshot(src='/../images/convo-icon.png' alt='Convo over coffee')
+        .col-lg-6.mb-4
+          +panel(
+            'WhereISS',
+            ['HTML', 'CSS','Javascript', 'Fetch API', 'Geolocation API', 'Leaflet'],
+            'Tech stack',
+            'https://apjohns.github.io/whereISS/',
+            'https://github.com/APJohns/whereISS',
+            '/../images/whereISS-icon.png'
+          )
+        .col-lg-6.mb-4
+          +panel(
+            'Solar System',
+            ['HTML', 'CSS','Javascript', 'Gulp'],
+            'Tech stack',
+            'https://thenextfrontier.netlify.app/',
+            'https://github.com/APJohns/solar-system',
+            '/../images/solar-system-icon.png'
+          )
+        .col-lg-6.mb-4
+          +panel(
+            'Convo / Coffee',
+            ['HTML', 'CSS','Javascript', 'React', 'Sass', 'Firebase'],
+            'Tech stack',
+            'https://convo.netlify.com/',
+            'https://github.com/APJohns/devChat',
+            '/../images/convo-icon.png'
+          )
