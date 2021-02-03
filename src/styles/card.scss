@@ -34,4 +34,8 @@
     transform: translateY(-10px);
     box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.15);
   }
+
+  &:focus {
+    outline: $focus-outline;
+  }
 }

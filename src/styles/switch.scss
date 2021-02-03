@@ -7,6 +7,10 @@
     &:checked + label::before {
       transform: translateX(100%);
     }
+
+    &:focus + label {
+      outline: $focus-outline;
+    }
   }
 
   label {
