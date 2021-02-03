@@ -1,0 +1,52 @@
+@import './styles/_variables.scss';
+@import './styles/utilities.scss';
+@import './styles/typography.scss';
+@import './styles/focus.scss';
+@import './styles/header.scss';
+@import './styles/switch.scss';
+@import './styles/card.scss';
+@import './styles/panel.scss';
+@import './styles/tags.scss';
+@import './styles/footer.scss';
+@import './styles/themes/themes.scss';
+
+html, body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--background-primary);
+
+  & > main {
+    flex: 1;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: 1002;
+  border: 0;
+  padding: 5px 10px;
+  background: var(--background-primary);
+  color: var(--font-color-primary);
+  transition: top 0.1s ease-out;
+
+  &:focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top .1s ease-in;
+  }
+}
+
+header,
+main,
+section,
+footer {
+  transition: background 0.1s ease-out;
+}

@@ -1,0 +1,20 @@
+@import './theme-dark.scss';
+@import './theme-light.scss';
+
+html {
+  @include theme-light();
+}
+
+html.theme-dark {
+  @include theme-dark();
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    @include theme-dark();
+  }
+
+  html.theme-light {
+    @include theme-light();
+  }
+}

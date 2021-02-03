@@ -1,0 +1,31 @@
+.site-header {
+  color: var(--font-color-header);
+  background: linear-gradient(135deg, var(--header-background-from), var(--header-background-to));
+
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    svg {
+      display: block;
+      width: 45px;
+      margin-right: 12px;
+      fill: var(--font-color-header);
+    }
+
+    .logo-text {
+      color: var(--font-color-header);
+    }
+  }
+
+  .hero-image {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--font-color-header);
+  }
+}

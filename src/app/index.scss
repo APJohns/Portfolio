@@ -1,0 +1,36 @@
+@import '../styles/variables';
+
+.section-heading {
+  position: relative;
+  transform: translateY(-50%);
+
+  h2, h3, h4 {
+    display: inline-block;
+    margin: 0;
+    border-radius: 2px;
+    padding: 2px 25px;
+    font-weight: $font-weight-regular;
+    color: var(--font-color-primary-inverse);
+    background: var(--border-color-primary);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid var(--border-color-primary);
+    z-index: -1;
+  }
+}
+
+.portfolio {
+  background: var(--background-secondary);
+}
+
+.card-list {
+  padding-left: 0;
+  list-style: none;
+}

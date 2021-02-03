@@ -3,16 +3,9 @@
   "version": "1.0.0",
   "description": "A portfolio website for Ashley Johns.",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "gulp": "^4.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2"
-  },
   "scripts": {
+    "start": "parcel src/app/index.pug",
+    "build": "parcel build src/app/index.pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/APJohns/Portfolio/issues"
   },
-  "homepage": "https://github.com/APJohns/Portfolio#readme"
+  "homepage": "https://github.com/APJohns/Portfolio#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.32.5"
+  }
 }

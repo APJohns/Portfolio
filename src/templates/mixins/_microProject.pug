@@ -1,9 +1,0 @@
-mixin microProject(project)
-  .mini
-    a(href=project.link)
-      img(src=project.image, alt='#{project.name} thumbnail')
-      .overlay
-        h3=project.name
-        .tech-group
-          each tech in project.tech
-            .tech=tech

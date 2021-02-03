@@ -1,0 +1,7 @@
+mixin card(title, subTitle, image, link)
+  a.card(href=link)
+    .card-header.mb-4
+      h3.card-title= title
+      p.card-sub-title= subTitle
+    // Image conveys information already stated in card so aria hiding
+    img.card-image(src=image alt=title aria-hidden='true')
