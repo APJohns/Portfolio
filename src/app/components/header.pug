@@ -9,12 +9,12 @@ mixin headerContent(title, subTitle, image)
       // Decorative image
       img.hero-image(src=image alt='' aria-hidden='true')
 
-mixin header(title, subTitle, image)
+mixin header(title, subTitle, navLinks, image)
   header.site-header.pt-4.pb-4.pb-md-5
     .container
       nav.row.justify-content-between.align-items-center.mb-4.mb-md-5
         .col-auto
-          a(href='./' aria-label='Home page').logo
+          a(href='/' aria-label='Home page').logo
             span(aria-hidden='true')
               include svgs/logo.svg
             .logo-text(aria-hidden='true') Ash
@@ -22,10 +22,10 @@ mixin header(title, subTitle, image)
               | Johns
         .col-auto.ml-auto.nav-links
           .row
-            .col-auto
-              a(href='#about') About
-            .col-auto
-              a(href='#portfolio') My Work
+            if navLinks
+              each link in navLinks
+                .col-auto
+                  a(href=link.route)= link.text
             .col-auto
               .switch
                 input#darkModeToggle(type='checkbox')

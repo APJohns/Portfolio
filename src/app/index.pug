@@ -7,7 +7,11 @@ block head
   link(rel='stylesheet' href='index.scss')
 
 block header
-  +header('UX / Front End Developer', '', '/../images/hero.svg')
+  +header(
+    'UX / Front End Developer',
+    '',
+    [{text: 'About', route: '#about'}, {text: 'My Work', route: '#portfolio'}],
+    '/../images/hero.svg')
 
 block main
   section#about.about.py-5
