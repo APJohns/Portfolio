@@ -1,0 +1,35 @@
+extends ../components/layout.pug
+
+include ../components/header.pug
+include ../components/card.pug
+
+block title
+  title Ash Johns | Star Stuff
+
+block header
+  +header('Star Stuff', 'Ashtronomy')
+
+block main
+  section.py-5
+    .container
+      .row
+        .col-md-7
+          .mb-4
+            p
+              | Star Stuff is an API for information on celestial objects. My primary motivation was to create a way to get the altitude and azimuth of a celestial object to aid in finding them through a telescope. The API, Star Stuff, is one part of a suite of related projects that I am currently working on.
+            p
+              | Star Stuff was an exploration into Node and API development. The project will continue to improve and grow as I learn more and build upon this application suite.
+          ul(aria-label='Tech stack').tags.mb-4
+            li HTML
+            li CSS
+            li Javascript
+            li Node
+            li APIs
+            li Pug
+            li Bootstrap
+          .mb-1
+            a(href='https://star-stuff.herokuapp.com/star-stuff') View Website
+          .mb-1
+            a(href='https://github.com/APJohns/starstuff-api') View Code
+        .col-md-5.pt-4.pt-md-0
+          img(src='/../images/star-stuff.png' alt='Star stuff').w-100
