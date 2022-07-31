@@ -40,7 +40,7 @@ const Project = (props) => {
               }
             </div>
             <div className="col-md-5 pt-4 pt-md-0">
-              <GatsbyImage image={getImage(data.frontmatter.image)} />
+              <GatsbyImage image={getImage(data.frontmatter.image)} alt="" />
             </div>
           </div>
         </div>

@@ -85,7 +85,7 @@ const IndexPage = ({ data }) => {
                   title={project.frontmatter.title}
                   subTitle={project.frontmatter.company}
                   path={`/projects/${project.slug}`}>
-                    <GatsbyImage image={getImage(project.frontmatter.thumbnail)} />
+                    <GatsbyImage image={getImage(project.frontmatter.thumbnail)} alt="" />
                 </Card>
               </li>
             ))}

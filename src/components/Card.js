@@ -8,7 +8,6 @@ const Card = (props) => {
         <h3 className="card-title">{ props.title }</h3>
         <p className="card-sub-title">{ props.subTitle }</p>
       </div>
-      {/* Image conveys information already stated in card so aria hiding */}
       { props.children }
     </Link>
   );
