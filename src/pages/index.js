@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
   ];
 
   return (
-    <Layout navLinks={navLinks} title="UX Front-End Developer">
+    <Layout navLinks={navLinks} title="UX Frontend Developer" hasImage>
       <section className="about pb-5 pt-md-5" id="about">
         <div className="container">
           <div className="row my-5">

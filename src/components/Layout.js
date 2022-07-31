@@ -79,14 +79,16 @@ const Layout = (props) => {
               </div>
             </div>
           </nav>
-          <div className="row align-items-center my-4 my-md-5">
+          <div className={'row align-items-center ' + (props.hasImage ? 'my-4 my-md-5' : 'my-2')}>
             <div className="col-md-8">
               <h1>{ props.title }</h1>
               {props.subTitle && <p className="sub-title">{ props.subTitle }</p>}
             </div>
-            <div className="col-md-4 d-none d-md-block">
-              <StaticImage src="../images/hero.svg" alt="" className="hero-image"/>
-            </div>
+            {props.hasImage &&
+              <div className="col-md-4 d-none d-md-block">
+                <StaticImage src="../images/hero.svg" alt="" className="hero-image"/>
+              </div>
+            }
           </div>
         </div>
       </header>
@@ -99,7 +101,7 @@ const Layout = (props) => {
             <div className="col text-center text-md-start">
               <div className="row mb-3">
                 <div className="col">
-                  Ashley Johns
+                  <div>Ashley Johns</div>
                   <a href="mailto:mail@ashpjohns.com">mail@ashpjohns.com</a>
                 </div>
               </div>
