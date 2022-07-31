@@ -19,14 +19,30 @@ import { StaticImage } from 'gatsby-plugin-image';
 const Layout = (props) => {
 
   const [theme, setTheme] = React.useState('light');
+  const themeCheckboxRef = React.useRef(null);
+
+  React.useEffect(() => {
+    // Check session storage
+    if (sessionStorage.getItem('theme')) {
+      themeCheckboxRef.current.checked = sessionStorage.getItem('theme') === 'dark';
+      setTheme(sessionStorage.getItem('theme'));
+    } else {
+      // If none, then set toggle state to OS theme
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      themeCheckboxRef.current.checked = prefersDarkScheme.matches;
+      sessionStorage.setItem('theme', prefersDarkScheme.matches ? 'dark' : 'light');
+      setTheme(prefersDarkScheme.matches ? 'dark' : 'light');
+    }
+  }, []);
 
   const toggleTheme = (e) => {
     setTheme(e.target.checked ? 'dark' : 'light');
+    sessionStorage.setItem('theme', e.target.checked ? 'dark' : 'light');
   }
 
   return (
     <>
-      <Helmet bodyAttributes={{
+      <Helmet htmlAttributes={{
         class: `theme-${theme}`
       }}>
         <meta charset="UTF-8" />
@@ -71,7 +87,7 @@ const Layout = (props) => {
             }
             <div className="col-auto">
               <div className="switch">
-                <input id="darkModeToggle" type="checkbox" onChange={toggleTheme} />
+                <input id="darkModeToggle" type="checkbox" onChange={toggleTheme} ref={themeCheckboxRef} />
                 <label id="darkModeToggleLabel" htmlFor="darkModeToggle" aria-label="Dark mode">
                   <SunSVG />
                   <MoonSVG />
