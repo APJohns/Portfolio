@@ -83,7 +83,7 @@ const IndexPage = ({ data }) => {
               <li key={'project' + i} className="col-sm-6 col-md-4 col-lg-3 mb-5">
                 <Card
                   title={project.frontmatter.title}
-                  subTitle={project.frontmatter.company}
+                  subTitle={project.frontmatter.subTitle}
                   path={`/projects/${project.slug}`}>
                     <GatsbyImage image={getImage(project.frontmatter.thumbnail)} alt="" />
                 </Card>
@@ -104,7 +104,7 @@ export const query = graphql`
       nodes {
         frontmatter {
           title
-          company
+          subTitle
           thumbnail {
             childImageSharp {
               gatsbyImageData

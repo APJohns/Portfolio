@@ -10,7 +10,7 @@ const Project = (props) => {
   const data = props.data.mdx;
 
   return (
-    <Layout hasImage={false} title={data.frontmatter.company} subTitle={data.frontmatter.role}>
+    <Layout hasImage={false} title={data.frontmatter.title} subTitle={data.frontmatter.subTitle}>
       <div className="py-5">
         <div className="container">
           <div className="row">
@@ -55,8 +55,8 @@ export const query = graphql`
   query($id: String) {
     mdx(id: { eq: $id }) {
       frontmatter {
-        company
-        role
+        title
+        subTitle
         tech
         siteLink
         codeLink
