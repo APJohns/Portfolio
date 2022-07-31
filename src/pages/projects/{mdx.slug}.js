@@ -14,7 +14,7 @@ const Project = (props) => {
       <div className="py-5">
         <div className="container">
           <div className="row">
-            <div className="col mb-4">
+            <div className="col-auto mb-4">
               <Link to="/" className="link-icon"><IconBackSVG />Back to home</Link>
             </div>
           </div>
