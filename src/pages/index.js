@@ -79,7 +79,7 @@ const IndexPage = ({ data }) => {
         </div>
         <div className="container">
           <ul className="row card-list">
-            {data.allMdx.nodes.map((project, i) => (
+            {data.allMdx.nodes.sort((a, b) => a.date > b.date).map((project, i) => (
               <li key={'project' + i} className="col-sm-6 col-md-4 col-lg-3 mb-5">
                 <Card
                   title={project.frontmatter.title}
@@ -105,6 +105,7 @@ export const query = graphql`
         frontmatter {
           title
           subTitle
+          date
           thumbnail {
             childImageSharp {
               gatsbyImageData

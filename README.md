@@ -52,3 +52,9 @@
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+
+
+## Notes
+Desktop image is 1080 x 810
+Mobile image is 370 x 660
+Drop shadow 8x 8y 8 radius 0.5 opacity
