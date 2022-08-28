@@ -79,7 +79,7 @@ const IndexPage = ({ data }) => {
         </div>
         <div className="container">
           <ul className="row card-list">
-            {data.allMdx.nodes.sort((a, b) => a.date > b.date).map((project, i) => (
+            {data.allMdx.nodes.map((project, i) => (
               <li key={'project' + i} className="col-sm-6 col-md-4 col-lg-3 mb-5">
                 <Card
                   title={project.frontmatter.title}
@@ -100,7 +100,7 @@ export default IndexPage;
 
 export const query = graphql`
   query homePage {
-    allMdx {
+    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
       nodes {
         frontmatter {
           title
