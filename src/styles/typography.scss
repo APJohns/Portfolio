@@ -41,3 +41,13 @@ a {
     color: var(--link-color-hover);
   }
 }
+
+.link-icon {
+  display: flex;
+  align-items: center;
+
+  svg {
+    height: 1em;
+    margin-right: 4px;
+  }
+}
