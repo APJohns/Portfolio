@@ -141,8 +141,7 @@ const Layout = (props) => {
               <div className="col-12 col-md-auto ms-auto text-center text-md-end">
                 <small>
                   Copyright &copy; 2020 -
-                  <span>{new Date().getFullYear()}</span>
-                  Ashley Johns. All rights reserved.
+                  <span>{new Date().getFullYear()}</span> Ashley Johns. All rights reserved.
                 </small>
               </div>
             </div>
