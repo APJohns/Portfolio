@@ -32,10 +32,7 @@ const IndexPage = ({ data }) => {
             <div className="col-md-8">
               <h2 className="visual-h3">What I do</h2>
               <p>
-                Hey, I'm Ash. I'm a Massachusetts based UX / Front End Developer. I got an Informatics degree from UMass Amherst, and since then I have been working at Epsilon as a UX Developer. My skill set focuses on the front end, but I am always eager to learn more and expand my capabilities.
-              </p>
-              <p>
-                When I'm not coding you can usually find me playing the piano/guitar, exploring Boston, hanging out with friends and family, or staring through the eyepiece of a telescope.
+                Hey, I'm Ash. I'm a Massachusetts based Frontend Developer currently building out an accessible, react based design system/component library at Boston Scientific. My journey started at UMass Amherst where I get a B.S. in Informatics. While at university I taught programming over the summer, before moving on to work as a full time developer.
               </p>
             </div>
             <div className="col-md-4">
