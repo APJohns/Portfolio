@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
         <div className="container">
           <div className="row my-5">
             <div className="col-md-8">
-              <h2 className="visual-h3">What I do</h2>
+              <h2 className="visual-h3">What I Do</h2>
               <p>
                 Hey, I'm Ash. I'm a Massachusetts based Frontend Developer currently building out an accessible, react based design system/component library at Boston Scientific. My journey started at UMass Amherst where I get a B.S. in Informatics. While at university I taught programming over the summer, before moving on to work as a full time developer.
               </p>
