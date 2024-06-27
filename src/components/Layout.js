@@ -6,8 +6,7 @@ import '../styles/bootstrap/bootstrap-grid.min.css';
 import '../styles/bootstrap/bootstrap-utilities.min.css';
 import '../styles.scss';
 
-import logo from '../images/svgs/logo.svg';
-import LogoSVG from '../images/svgs/logo.inline.svg';
+import logo from '../images/logo.png';
 import SunSVG from '../images/svgs/sun.inline.svg';
 import MoonSVG from '../images/svgs/moon.inline.svg';
 import GithubSVG from '../images/svgs/github.inline.svg';
@@ -58,7 +57,7 @@ const Layout = (props) => {
         <meta name="twitter:image:alt" content="Ash Johns" />
 
         <title>Ash Johns</title>
-        <link rel='icon' type='image/svg+xml' href={logo} />
+        <link rel='icon' type='image/png' href={logo} />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet" />
       </Helmet>
@@ -69,9 +68,8 @@ const Layout = (props) => {
             <div className="col-auto">
               <a className="logo" href="/" aria-label="Home page">
                 <span aria-hidden="true">
-                  <LogoSVG />
+                  <StaticImage src="../images/logo.png" alt="" />
                 </span>
-                <div className="logo-text" aria-hidden="true">Ash<br />Johns</div>
               </a>
             </div>
             {props.navLinks &&

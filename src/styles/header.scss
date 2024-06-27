@@ -7,15 +7,10 @@
     align-items: center;
     text-decoration: none;
 
-    svg {
+    img {
       display: block;
-      width: 45px;
-      margin-right: 12px;
-      fill: var(--font-color-header);
-    }
-
-    .logo-text {
-      color: var(--font-color-header);
+      width: 50px;
+      height: auto;
     }
   }
 
