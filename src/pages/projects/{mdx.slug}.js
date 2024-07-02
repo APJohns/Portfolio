@@ -19,7 +19,7 @@ const Project = (props) => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-7">
+            <div className={data.frontmatter.image ? `col-md-7` : 'col'}>
               <div className="mb-4">
                 <MDXRenderer>{data.body}</MDXRenderer>
               </div>
@@ -39,9 +39,11 @@ const Project = (props) => {
                 </div>
               }
             </div>
-            <div className="col-md-5 pt-4 pt-md-0">
-              <GatsbyImage image={getImage(data.frontmatter.image)} alt="" />
-            </div>
+            {data.frontmatter.image &&
+              <div className="col-md-5 pt-4 pt-md-0">
+                <GatsbyImage image={getImage(data.frontmatter.image)} alt="" />
+              </div>
+            }
           </div>
         </div>
       </div>
