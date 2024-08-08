@@ -1,5 +1,5 @@
-import * as React from "react";
-import { graphql } from "gatsby";
+import * as React from 'react';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Card from '../components/Card';
 
@@ -12,16 +12,15 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 // markup
 const IndexPage = ({ data }) => {
-
   const navLinks = [
     {
       text: 'About',
-      href: '#about'
+      href: '#about',
     },
     {
       text: 'My Work',
-      href: '#portfolio'
-    }
+      href: '#portfolio',
+    },
   ];
 
   return (
@@ -32,7 +31,11 @@ const IndexPage = ({ data }) => {
             <div className="col-md-8">
               <h2 className="visual-h3">What I Do</h2>
               <p>
-                Hey, I'm Ash. I'm a Massachusetts based Frontend Developer currently building out an accessible, react based design system/component library at Boston Scientific. My journey started at UMass Amherst where I get a B.S. in Informatics. While at university I taught programming over the summer, before moving on to work as a full time developer.
+                Hi! I'm Ash. I'm a Boston based Frontend Developer. My latest focus has been on building out design
+                systems from the ground up. That includes everything from developing React components, to setting up
+                CI/CD and everything in-between. These experiences have made me very good at writing reusable code with
+                a great developer experience. Code that abides to frontend best practices and accessibility standards.
+                I'm always looking to apply these skills in new ways, so don't hesitate to reach out!
               </p>
             </div>
             <div className="col-md-4">
@@ -46,17 +49,26 @@ const IndexPage = ({ data }) => {
               <div className="row">
                 <div className="col-auto">
                   <a className="icon-link" href="https://github.com/APJohns">
-                    <span aria-hidden="true"><GithubSVG /></span>GitHub
+                    <span aria-hidden="true">
+                      <GithubSVG />
+                    </span>
+                    GitHub
                   </a>
                 </div>
                 <div className="col-auto">
                   <a className="icon-link" href="https://codepen.io/AshJohns">
-                    <span aria-hidden="true"><CodepenSVG /></span>CodePen
+                    <span aria-hidden="true">
+                      <CodepenSVG />
+                    </span>
+                    CodePen
                   </a>
                 </div>
                 <div className="col-auto">
                   <a className="icon-link" href="https://www.linkedin.com/in/ashley-p-johns">
-                    <span aria-hidden="true"><LinkedinSVG /></span>LinkedIn
+                    <span aria-hidden="true">
+                      <LinkedinSVG />
+                    </span>
+                    LinkedIn
                   </a>
                 </div>
               </div>
@@ -81,8 +93,9 @@ const IndexPage = ({ data }) => {
                 <Card
                   title={project.frontmatter.title}
                   subTitle={project.frontmatter.subTitle}
-                  path={`/projects/${project.slug}`}>
-                    <GatsbyImage image={getImage(project.frontmatter.thumbnail)} alt="" />
+                  path={`/projects/${project.slug}`}
+                >
+                  <GatsbyImage image={getImage(project.frontmatter.thumbnail)} alt="" />
                 </Card>
               </li>
             ))}
@@ -90,14 +103,14 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 export default IndexPage;
 
 export const query = graphql`
   query homePage {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
           title
